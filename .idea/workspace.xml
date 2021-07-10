@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60082f39-aadd-49cd-8506-a5f6b9ae99ec" name="Default Changelist" comment="" />
+    <list default="true" id="60082f39-aadd-49cd-8506-a5f6b9ae99ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.9.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.9.1.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.9.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.9.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.9.1.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.9.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.9.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/_ipaddress.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/_psycopg.cp39-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/_range.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/errorcodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/extensions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/extras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/sql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2/tz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocialProyect/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SocialProyect/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1v58mBBP4H5Czai8nzxCihnOCOS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -61,10 +98,25 @@
       <workItem from="1625840805279" duration="64000" />
       <workItem from="1625841510402" duration="458000" />
       <workItem from="1625847832484" duration="996000" />
+      <workItem from="1625876235151" duration="5298000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
