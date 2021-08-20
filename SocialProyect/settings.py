@@ -24,7 +24,9 @@ SECRET_KEY = 'django-insecure-f19ljd@&muh6+hq2q*k2q*ml40^pnb6tz^cms4l3%qpq9=xj5d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.56.1'
+]
 
 # Application definition
 
@@ -37,8 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework'
+    'rest_framework',
+
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,16 +87,29 @@ DATABASES = {
     #    'ENGINE': 'django.db.backends.sqlite3',
     #    'NAME': BASE_DIR / 'db.sqlite3',
     # }
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+    #           'NAME': 'de2jlpc52ev3vn',
+
+    #             'USER': 'fmitddvaimmcur',
+
+    #               'PASSWORD': '1b49fc5a5cf8fe71fca9b2b733ae3f7115b501c0f3b1b03f51b2d5a5c16254fe',
+
+    #               'HOST': 'ec2-34-233-114-40.compute-1.amazonaws.com',
+
+    #  'PORT': '5432',
+    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'de2jlpc52ev3vn',
+        'NAME': 'PostProyect',
 
-        'USER': 'fmitddvaimmcur',
+        'USER': 'postgres',
 
-        'PASSWORD': '1b49fc5a5cf8fe71fca9b2b733ae3f7115b501c0f3b1b03f51b2d5a5c16254fe',
+        'PASSWORD': 'root',
 
-        'HOST': 'ec2-34-233-114-40.compute-1.amazonaws.com',
+        'HOST': 'localhost',
 
         'PORT': '5432',
     }

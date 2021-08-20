@@ -18,6 +18,7 @@ class Profile(models.Model):
         user_ids = Relationship.objects.filter(to_user=self.user).values_list('from_user_id', flat=True)
         return User.objects.filter(id__in=user_ids)
 
+
 class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
     timestamp = models.DateTimeField(default=timezone.now)
@@ -29,6 +30,7 @@ class Post(models.Model):
     def __str__(self):
         return f'{self.user.username}: {self.content}'
 
+
 class Relationship(models.Model):
     from_user = models.ForeignKey(User, related_name='Relationships', on_delete=models.CASCADE)
     to_user = models.ForeignKey(User, related_name='Related_to', on_delete=models.CASCADE)
@@ -38,5 +40,5 @@ class Relationship(models.Model):
 
     class Meta:
         indexes = [
-            models.Index(fields=['from_user', 'to_user',]),
+            models.Index(fields=['from_user', 'to_user', ]),
         ]
