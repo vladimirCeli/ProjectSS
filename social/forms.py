@@ -5,9 +5,38 @@ from .models import Post
 
 
 class UserRegisterForm(UserCreationForm):
-    email = forms.EmailField()
-    password1 = forms.CharField(label='Contraseña', widget=forms.PasswordInput)
-    password2 = forms.CharField(label='Confirmar Contraseña', widget=forms.PasswordInput)
+    username = forms.CharField(widget=forms.TextInput(
+        attrs={
+            'placeholder': 'Write your username',
+            'class': 'input-form  username-class'
+        }
+    ))
+
+    email = forms.EmailField(widget=forms.EmailInput(
+        attrs={
+            'placeholder': 'Write your Email',
+            'class': 'input-form email-class'
+        }
+    ))
+    password1 = forms.CharField(widget=forms.PasswordInput(
+        attrs={
+            'placeholder': 'Write your password',
+            'class': 'input-form password-class password-secret'
+        }
+    ))
+    password2 = forms.CharField(widget=forms.PasswordInput(
+        attrs={
+            'placeholder': 'Repeat your password',
+            'class': 'input-form password-class password-secret-repeat'
+        }
+    ))
+
+    # profile = forms.ImageField(widget=forms.FileInput(
+    #   attrs={
+    #      'placeholder': 'Repeat your password',
+    #       'class': 'input-form password-class password-secret-repeat'
+    #    }
+    # ))
 
     class Meta:
         model = User

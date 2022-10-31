@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-f19ljd@&muh6+hq2q*k2q*ml40^pnb6tz^cms4l3%qpq9=xj5d
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '192.168.56.1'
+    '*'
 ]
 
 # Application definition
@@ -38,11 +38,18 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary',
     'rest_framework',
 
 ]
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dzkcr9eec',
+    'API_KEY': '314263318477114',
+    'API_SECRET': 'w4b7HseGjkcPejfnh5CbZvr_yTs'
+}
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
@@ -82,6 +89,7 @@ WSGI_APPLICATION = 'SocialProyect.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+'''
 DATABASES = {
     # 'default': {
     #    'ENGINE': 'django.db.backends.sqlite3',
@@ -112,6 +120,14 @@ DATABASES = {
         'HOST': 'localhost',
 
         'PORT': '5432',
+    }
+}
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -155,6 +171,7 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 LOGIN_REDIRECT_URL = 'feed'
 LOGIN_URL = 'login'
